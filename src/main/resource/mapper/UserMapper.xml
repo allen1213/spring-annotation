@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.UserMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="com.example.entity.User">
+		<id column="user_id" property="userId" />
+		<result column="user_name" property="userName" />
+		<result column="user_pwd" property="userPwd" />
+		<result column="user_avatar" property="userAvatar" />
+		<result column="user_type" property="userType" />
+		<result column="user_description" property="userDescription" />
+		<result column="user_gender" property="userGender" />
+		<result column="registDate" property="registDate" />
+		<result column="video_count" property="videoCount" />
+		<result column="follow_count" property="followCount" />
+		<result column="fans_count" property="fansCount" />
+		<result column="collection_count" property="collectionCount" />
+		<result column="like_count" property="likeCount" />
+		<result column="share_count" property="shareCount" />
+		<result column="role_id" property="roleId" />
+	</resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        user_id AS userId, user_name AS userName, user_pwd AS userPwd, user_avatar AS userAvatar, user_type AS userType, user_description AS userDescription, user_gender AS userGender, registDate, video_count AS videoCount, follow_count AS followCount, fans_count AS fansCount, collection_count AS collectionCount, like_count AS likeCount, share_count AS shareCount, role_id AS roleId
+    </sql>
+
+</mapper>
