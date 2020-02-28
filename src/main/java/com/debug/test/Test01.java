@@ -31,15 +31,51 @@ public class Test01 {
         IService service = (IService) context.getBean("userService");
         service.query();
 
-//        Properties
-//        LdapContext
-//        InitialLdapContext
-//        SearchControls
-//        NamingEnumeration<SearchResult>
+        //getObjectGUID("\\db\\1c\\fd\\da\\7c\\5e\\1a\\40\\a4\\e8\\15\\d3\\99\\d5\\88\\46");
+
+    }
+    
+    public static void getObjectGUID(String code) {
+
+        byte[] GUID = code.getBytes();
+
+        StringBuffer byteGUID = new StringBuffer();
+        for (int i = 0;i < GUID.length;i ++) {
+            byteGUID.append("\\")
+                    .append(AddLeadingZero((int)GUID[i] & 0xFF));
+        }
+
+        StringBuffer strGUID = new StringBuffer();
+        strGUID.append("{")
+                .append(AddLeadingZero((int)GUID[3] & 0xFF))
+                .append(AddLeadingZero((int)GUID[2] & 0xFF))
+                .append(AddLeadingZero((int)GUID[1] & 0xFF))
+                .append(AddLeadingZero((int)GUID[0] & 0xFF))
+                .append("-")
+                .append(AddLeadingZero((int)GUID[5] & 0xFF))
+                .append(AddLeadingZero((int)GUID[4] & 0xFF))
+                .append("-")
+                .append(AddLeadingZero((int)GUID[7] & 0xFF))
+                .append(AddLeadingZero((int)GUID[6] & 0xFF))
+                .append("-")
+                .append(AddLeadingZero((int)GUID[8] & 0xFF))
+                .append(AddLeadingZero((int)GUID[9] & 0xFF))
+                .append("-")
+                .append(AddLeadingZero((int)GUID[10] & 0xFF))
+                .append(AddLeadingZero((int)GUID[11] & 0xFF))
+                .append(AddLeadingZero((int)GUID[12] & 0xFF))
+                .append(AddLeadingZero((int)GUID[13] & 0xFF))
+                .append(AddLeadingZero((int)GUID[14] & 0xFF))
+                .append(AddLeadingZero((int)GUID[15] & 0xFF))
+                .append("}");
+
+        System.out.println("GUID (String format): " + strGUID.toString());
+
     }
 
-    @Override
-    public String toString() {
-        return "super.toString()";
+    public static String AddLeadingZero(int k) {
+        return (k <= 0xF) ? "0" + Integer.toHexString(k) : Integer
+                .toHexString(k);
     }
+
 }

@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0fe1d7f-ca13-4b8c-aee7-4a936675d1b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/debug/aspect/Logger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/debug/bean/TestBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/debug/config/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/debug/service/IService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/debug/service/IndexService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/debug/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/debug/test/Test01.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/debug/test/Test01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/debug/test/Test01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/debug/test/Test01.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/debug/test/Test01.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -189,7 +183,7 @@
       <workItem from="1574826324287" duration="232000" />
       <workItem from="1577243358517" duration="15000" />
       <workItem from="1578902897212" duration="20774000" />
-      <workItem from="1582077414376" duration="67839000" />
+      <workItem from="1582077414376" duration="76117000" />
     </task>
     <servers />
   </component>
